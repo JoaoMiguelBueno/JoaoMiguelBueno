@@ -17,6 +17,7 @@
       font-family: var(--fonte);
       background-color: var(--cor-primaria);
       color: var(--cor-secundaria);
+      line-height: 1.6;
     }
 
     header {
@@ -75,6 +76,37 @@
       font-size: 0.9rem;
       color: #aaa;
     }
+
+    .carrossel-videos {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+
+    .carrossel-videos iframe {
+      border-radius: 8px;
+    }
+
+    .posts-imagens {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .posts-imagens img {
+      width: 200px;
+      border-radius: 8px;
+    }
+
+    a {
+      color: var(--cor-destaque);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -86,33 +118,64 @@
   <nav>
     <a href="#sobre">Sobre</a>
     <a href="#experiencias">Experiências</a>
-    <a href="#trabalhos">Trabalhos</a>
+    <a href="#trabalhos-videos">Portfólio</a>
     <a href="#contato">Contato</a>
   </nav>
 
   <section id="sobre">
     <h2>Sobre mim</h2>
-    <p>Tenho 24 anos, sou estudante da UFPel, roteirista e apaixonado por contar histórias. Busco cruzar negritude, saberes populares e linguagem audiovisual nos meus projetos.</p>
+    <p>Olá! Sou João Miguel Bueno, estudante de Jornalismo na Universidade Federal de Pelotas, apaixonado por comunicação e cinema. Tenho um interesse especial na gestão, elaboração e produção de conteúdos para mídias sociais, especialmente focados no audiovisual — como vídeos curtos — mas também atuo com estratégias de divulgação, produção de textos jornalísticos e desenvolvimento de peças gráficas.</p>
+    <p>Ao longo da minha trajetória acadêmica, tive a oportunidade de explorar diferentes linguagens e funções dentro da comunicação: já fui designer, redator, editor de vídeo, cinegrafista e repórter. Cada uma dessas experiências contribuiu para ampliar minhas habilidades e meu olhar sobre o fazer comunicacional.</p>
   </section>
 
   <section id="experiencias">
     <h2>Experiências</h2>
     <ul>
-      <li>Bolsista no PET Fronteiras: Saberes e Práticas Populares</li>
-      <li>Curta “Ela Nunca Esteve Aqui” (roteiro)</li>
-      <li>Roteiro de longa em desenvolvimento: “Os Ricos Não Vão Para o Céu”</li>
+      <li><strong>PET Fronteiras:</strong> Produção de conteúdo, identidade visual e coordenação de mídias</li>
+      <li><strong>Em Pauta:</strong> Projeto de extensão em jornalismo experimental</li>
+      <li><strong>DIESP:</strong> Desenvolvimento de material gráfico e audiovisual institucional</li>
+      <li><strong>MARTE:</strong> Núcleo de Comunicação Experimental (vídeo, fotografia e roteiro)</li>
     </ul>
   </section>
 
-  <section id="trabalhos">
-    <h2>Trabalhos</h2>
-    <p>Em breve: links para vídeos, PDFs, e produções gráficas.</p>
+  <section id="trabalhos-videos">
+    <h2>Produção e Edição de Vídeos</h2>
+    <p>Trabalhos desenvolvidos para projetos acadêmicos, institucionais e autorais.</p>
+
+    <div class="carrossel-videos">
+      <iframe width="300" height="180" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+      <iframe width="300" height="180" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+      <iframe width="300" height="180" src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="trabalhos-posts">
+    <h2>Produção de Posts</h2>
+    <p>Artes gráficas e peças visuais desenvolvidas para redes sociais.</p>
+
+    <div class="posts-imagens">
+      <img src="link_da_imagem_1" alt="Post 1">
+      <img src="link_da_imagem_2" alt="Post 2">
+      <img src="link_da_imagem_3" alt="Post 3">
+    </div>
+  </section>
+
+  <section id="trabalhos-textos">
+    <h2>Produção de Textos Jornalísticos</h2>
+    <p>Matérias, entrevistas e produções jornalísticas em diferentes formatos.</p>
+
+    <ul>
+      <li><a href="link_do_texto_1" target="_blank">“Título da Matéria 1” – Projeto Em Pauta</a></li>
+      <li><a href="link_do_texto_2" target="_blank">“Título da Matéria 2” – DIESP</a></li>
+      <li><a href="link_do_texto_3" target="_blank">“Título da Matéria 3” – PET Fronteiras</a></li>
+    </ul>
   </section>
 
   <section id="contato">
     <h2>Contato</h2>
-    <p>Email: joao@email.com</p>
-    <p>Instagram: @joaomiguel</p>
+    <p><strong>Email:</strong> joao@email.com</p>
+    <p><strong>Instagram:</strong> <a href="https://instagram.com/joaomiguel" target="_blank">@joaomiguel</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/joaomiguel" target="_blank">linkedin.com/in/joaomiguel</a></p>
   </section>
 
   <footer>
