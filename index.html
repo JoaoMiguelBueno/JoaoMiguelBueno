@@ -3,183 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>João Miguel - Portfólio</title>
-  <style>
-    :root {
-      --cor-primaria: #1f1f1f;
-      --cor-secundaria: #f1f1f1;
-      --cor-destaque: #F26430;
-      --fonte: 'Segoe UI', sans-serif;
-    }
-
-    body {
-      margin: 0;
-      font-family: var(--fonte);
-      background-color: var(--cor-primaria);
-      color: var(--cor-secundaria);
-      line-height: 1.6;
-    }
-
-    header {
-      text-align: center;
-      padding: 4rem 2rem;
-      background-color: #000;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      color: #bbb;
-    }
-
-    nav {
-      background-color: #111;
-      text-align: center;
-      padding: 1rem 0;
-    }
-
-    nav a {
-      color: var(--cor-secundaria);
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: var(--cor-destaque);
-    }
-
-    section {
-      padding: 4rem 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    h2 {
-      color: var(--cor-destaque);
-      margin-bottom: 1rem;
-    }
-
-    ul {
-      list-style-type: circle;
-      padding-left: 1.2rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background-color: #000;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-
-    .carrossel-videos {
-      display: flex;
-      overflow-x: auto;
-      gap: 1rem;
-      padding: 1rem 0;
-    }
-
-    .carrossel-videos iframe {
-      border-radius: 8px;
-    }
-
-    .posts-imagens {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-
-    .posts-imagens img {
-      width: 200px;
-      border-radius: 8px;
-    }
-
-    a {
-      color: var(--cor-destaque);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>João Miguel Bueno - Portfólio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>João Miguel</h1>
-    <p>Roteirista | Estudante de Jornalismo | PET Fronteiras</p>
+    <h1>João Miguel Bueno</h1>
+    <p>Estudante de Jornalismo e apaixonado por Comunicação e Cinema</p>
   </header>
 
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#experiencias">Experiências</a>
-    <a href="#trabalhos-videos">Portfólio</a>
-    <a href="#contato">Contato</a>
-  </nav>
-
   <section id="sobre">
-    <h2>Sobre mim</h2>
-    <p>Olá! Sou João Miguel Bueno, estudante de Jornalismo na Universidade Federal de Pelotas, apaixonado por comunicação e cinema. Tenho um interesse especial na gestão, elaboração e produção de conteúdos para mídias sociais, especialmente focados no audiovisual — como vídeos curtos — mas também atuo com estratégias de divulgação, produção de textos jornalísticos e desenvolvimento de peças gráficas.</p>
-    <p>Ao longo da minha trajetória acadêmica, tive a oportunidade de explorar diferentes linguagens e funções dentro da comunicação: já fui designer, redator, editor de vídeo, cinegrafista e repórter. Cada uma dessas experiências contribuiu para ampliar minhas habilidades e meu olhar sobre o fazer comunicacional.</p>
+    <h2>Sobre Mim</h2>
+    <p>Olá, sou João Miguel Bueno, estudante do curso de Jornalismo na Universidade Federal de Pelotas e um apaixonado por comunicação e cinema. Dentro da comunicação, tenho interesse especial na gestão, elaboração e produção de conteúdos de mídias sociais, especialmente focados no audiovisual, como vídeos curtos. Também me interesso por elaboração de estratégias de divulgação, produção de texto jornalístico e desenvolvimento de peças gráficas.</p>
+    <p>Durante minha trajetória acadêmica, já experenciei diversas faces da comunicação: designer, redator, editor de vídeos, cinegrafista e repórter, aproveitando cada segundo para aumentar minhas habilidades.</p>
   </section>
 
   <section id="experiencias">
     <h2>Experiências</h2>
     <ul>
-      <li><strong>PET Fronteiras:</strong> Produção de conteúdo, identidade visual e coordenação de mídias</li>
-      <li><strong>Em Pauta:</strong> Projeto de extensão em jornalismo experimental</li>
-      <li><strong>DIESP:</strong> Desenvolvimento de material gráfico e audiovisual institucional</li>
-      <li><strong>MARTE:</strong> Núcleo de Comunicação Experimental (vídeo, fotografia e roteiro)</li>
+      <li><strong>PET Fronteiras</strong> - Participação em projetos de produção de conteúdo e comunicação popular.</li>
+      <li><strong>EM PAUTA</strong> - Trabalho de assessoria de imprensa e produção de conteúdo jornalístico.</li>
+      <li><strong>DIESP</strong> - Desenvolvimento de estratégias de comunicação e marketing.</li>
+      <li><strong>MARTE</strong> - Produção audiovisual e de conteúdo criativo.</li>
     </ul>
   </section>
 
-  <section id="trabalhos-videos">
-    <h2>Produção e Edição de Vídeos</h2>
-    <p>Trabalhos desenvolvidos para projetos acadêmicos, institucionais e autorais.</p>
+  <section id="portfolio">
+    <h2>Portfólio</h2>
 
-    <div class="carrossel-videos">
-      <iframe width="300" height="180" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
-      <iframe width="300" height="180" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
-      <iframe width="300" height="180" src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+    <h3>Produção e Edição de Vídeos</h3>
+    <div class="video-carousel">
+      <button class="prev-btn">&#9664;</button> <!-- Setinha para a esquerda -->
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+        <!-- Adicione mais vídeos aqui -->
+      </div>
+      <button class="next-btn">&#9654;</button> <!-- Setinha para a direita -->
+    </div>
+
+    <h3>Produção de Posts</h3>
+    <div class="gallery">
+      <a href="link-do-post-1"><img src="caminho-da-imagem-1.jpg" alt="Post 1"></a>
+      <a href="link-do-post-2"><img src="caminho-da-imagem-2.jpg" alt="Post 2"></a>
+      <a href="link-do-post-3"><img src="caminho-da-imagem-3.jpg" alt="Post 3"></a>
+    </div>
+
+    <h3>Produção de Textos Jornalísticos</h3>
+    <div class="gallery">
+      <a href="link-do-artigo-1">Artigo 1</a>
+      <a href="link-do-artigo-2">Artigo 2</a>
+      <a href="link-do-artigo-3">Artigo 3</a>
     </div>
   </section>
 
-  <section id="trabalhos-posts">
-    <h2>Produção de Posts</h2>
-    <p>Artes gráficas e peças visuais desenvolvidas para redes sociais.</p>
-
-    <div class="posts-imagens">
-      <img src="link_da_imagem_1" alt="Post 1">
-      <img src="link_da_imagem_2" alt="Post 2">
-      <img src="link_da_imagem_3" alt="Post 3">
-    </div>
-  </section>
-
-  <section id="trabalhos-textos">
-    <h2>Produção de Textos Jornalísticos</h2>
-    <p>Matérias, entrevistas e produções jornalísticas em diferentes formatos.</p>
-
-    <ul>
-      <li><a href="link_do_texto_1" target="_blank">“Título da Matéria 1” – Projeto Em Pauta</a></li>
-      <li><a href="link_do_texto_2" target="_blank">“Título da Matéria 2” – DIESP</a></li>
-      <li><a href="link_do_texto_3" target="_blank">“Título da Matéria 3” – PET Fronteiras</a></li>
-    </ul>
-  </section>
-
-  <section id="contato">
-    <h2>Contato</h2>
-    <p><strong>Email:</strong> joao@email.com</p>
-    <p><strong>Instagram:</strong> <a href="https://instagram.com/joaomiguel" target="_blank">@joaomiguel</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/joaomiguel" target="_blank">linkedin.com/in/joaomiguel</a></p>
+  <section id="contatos">
+    <h2>Contatos</h2>
+    <p>Email: <a href="mailto:joaomiguel@email.com">joaomiguel@email.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/joaomiguel" target="_blank">João Miguel no LinkedIn</a></p>
   </section>
 
   <footer>
-    <p>© João Miguel - 2025</p>
+    <p>&copy; 2025 João Miguel Bueno. Todos os direitos reservados.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
