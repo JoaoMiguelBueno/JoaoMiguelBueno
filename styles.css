@@ -5,11 +5,16 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Inter', sans-serif;
   display: flex;
   min-height: 100vh;
   background-color: #f9f9f9;
   color: #333;
+}
+
+.container {
+  display: flex;
+  width: 100%;
 }
 
 .sidebar {
@@ -24,7 +29,7 @@ body {
   height: 100vh;
 }
 
-.sidebar img {
+.profile-pic {
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -46,30 +51,25 @@ body {
   line-height: 1.4;
 }
 
-.sidebar .links {
+.social-links {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
-.sidebar .links a {
-  text-decoration: none;
+.social-links a {
   color: #fff;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  font-size: 18px;
   transition: color 0.3s ease;
 }
 
-.sidebar .links a:hover {
+.social-links a:hover {
   color: #00bfa6;
 }
 
-.main {
+.content {
   margin-left: 260px;
   padding: 40px;
-  width: 100%;
+  flex: 1;
 }
 
 section {
@@ -80,6 +80,12 @@ h2 {
   margin-bottom: 15px;
   font-size: 24px;
   color: #1f1f1f;
+}
+
+h3 {
+  margin: 20px 0 10px;
+  font-size: 18px;
+  color: #444;
 }
 
 p {
@@ -93,31 +99,14 @@ p {
   gap: 20px;
 }
 
-.card {
-  background-color: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.card img {
+.grid img {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
 }
 
-.card .caption {
-  padding: 10px 12px;
-  font-size: 14px;
-  color: #333;
+.grid img:hover {
+  transform: scale(1.02);
 }
