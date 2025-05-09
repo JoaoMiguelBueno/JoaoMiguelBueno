@@ -8,17 +8,25 @@
 </head>
 <body>
 
-  <!-- BLOCO 1 -->
+  <!-- BLOCO 1: Apresentação -->
   <section class="bloco claro">
     <div class="container">
       <img src="img/Foto perfil.png" class="perfil" alt="Foto de perfil">
       <h1>Olá!</h1>
       <h2>JOÃO MIGUEL</h2>
-      <p>Sou estudante de Jornalismo na UFPel...</p>
+      <p>Sou estudante de Jornalismo na UFPel, apaixonado por comunicação e cinema...</p>
     </div>
   </section>
 
-  <!-- BLOCO 2 -->
+  <!-- BLOCO 2: Sobre mim -->
+  <section class="bloco escuro">
+    <div class="container">
+      <h2>SOBRE MIM</h2>
+      <p>Graduando em Jornalismo, com experiência em produção audiovisual, design e gestão de redes sociais. Me interesso por estratégias de comunicação, edição de vídeo e peças gráficas com identidade.</p>
+    </div>
+  </section>
+
+  <!-- BLOCO 3: O que eu faço -->
   <section class="bloco escuro">
     <div class="container">
       <h2>O QUE EU FAÇO?</h2>
@@ -39,46 +47,46 @@
     </div>
   </section>
 
-  <!-- BLOCO 3 -->
+  <!-- BLOCO 4: Peças Visuais (Carrossel) -->
   <section class="bloco escuro">
     <div class="container">
       <h2>PEÇAS VISUAIS</h2>
-      <div class="carrossel">
-        <button onclick="navegarCards(-1)">‹</button>
-        <div class="faixa" id="carrossel-cards">
-          <img src="img/Anuncio 7 dia JUGS.heic" alt="">
-          <img src="img/Atletas Ufpel Jubs.heic" alt="">
-          <img src="img/Divulgação Fronteiras Musicais.heic" alt="">
-          <img src="img/Etapa Handebol JUGS.heic" alt="">
+      <div class="carrossel-wrapper">
+        <button class="btn-carrossel" onclick="navegarCards(-1)">‹</button>
+        <div class="carrossel-conteudo" id="carrossel-cards">
+          <div class="card-item"><img src="img/Anuncio 7 dia JUGS.jpg" alt=""></div>
+          <div class="card-item"><img src="img/Atletas Ufpel Jubs.jpg" alt=""></div>
+          <div class="card-item"><img src="img/Divulgação Fronteiras Musicais.jpg" alt=""></div>
+          <div class="card-item"><img src="img/Etapa Handebol JUGS.jpg" alt=""></div>
         </div>
-        <button onclick="navegarCards(1)">›</button>
+        <button class="btn-carrossel" onclick="navegarCards(1)">›</button>
       </div>
     </div>
   </section>
 
-  <!-- BLOCO 4 -->
+  <!-- BLOCO 5: Vídeos (Carrossel) -->
   <section class="bloco claro">
     <div class="container">
       <h2>CONFIRA ALGUNS DOS MEUS TRABALHOS</h2>
-      <div class="carrossel">
-        <button onclick="navegarVideos(-1)">‹</button>
-        <div class="faixa" id="carrossel-videos">
-          <iframe src="https://www.instagram.com/empautaufpel/reel/DG-4NV9gz5Q/embed" frameborder="0"></iframe>
-          <iframe src="https://www.instagram.com/empautaufpel/reel/DGVoDrkg8v-/embed" frameborder="0"></iframe>
-          <iframe src="https://www.instagram.com/empautaufpel/reel/DGJjp5vSK_7/embed" frameborder="0"></iframe>
-          <iframe src="https://www.instagram.com/petfronteirasufpel/reel/DHmQC8hJjAe/embed" frameborder="0"></iframe>
+      <div class="carrossel-wrapper">
+        <button class="btn-carrossel" onclick="navegarVideos(-1)">‹</button>
+        <div class="carrossel-conteudo" id="carrossel-videos">
+          <div class="card-item"><iframe src="https://www.instagram.com/empautaufpel/reel/DG-4NV9gz5Q/embed" frameborder="0"></iframe></div>
+          <div class="card-item"><iframe src="https://www.instagram.com/empautaufpel/reel/DGVoDrkg8v-/embed" frameborder="0"></iframe></div>
+          <div class="card-item"><iframe src="https://www.instagram.com/empautaufpel/reel/DGJjp5vSK_7/embed" frameborder="0"></iframe></div>
+          <div class="card-item"><iframe src="https://www.instagram.com/petfronteirasufpel/reel/DHmQC8hJjAe/embed" frameborder="0"></iframe></div>
         </div>
-        <button onclick="navegarVideos(1)">›</button>
+        <button class="btn-carrossel" onclick="navegarVideos(1)">›</button>
       </div>
     </div>
   </section>
 
-  <!-- BLOCO 5 -->
-  <section class="bloco escuro">
+  <!-- RODAPÉ -->
+  <footer class="rodape escuro">
     <div class="container">
       <p>Feito por João Miguel Bueno</p>
     </div>
-  </section>
+  </footer>
 
   <script src="script.js"></script>
 </body>
