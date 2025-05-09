@@ -7,17 +7,22 @@
 body {
   margin: 0;
   font-family: 'Helvetica Neue', sans-serif;
-  background-color: white;
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 .bloco {
-  padding: 60px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.bloco .container {
+  width: 100%;
 }
 
 .bloco-claro {
@@ -51,7 +56,6 @@ h2 {
 h3 {
   font-size: 1.8rem;
   margin-bottom: 30px;
-  text-align: left;
 }
 
 h4 {
@@ -64,47 +68,46 @@ p {
   line-height: 1.6;
 }
 
-/* Cards de serviços */
+/* Cards: lado a lado, tamanhos iguais */
 .cards {
   display: flex;
-  justify-content: space-between;
   gap: 20px;
-  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .card {
   flex: 1;
-  min-width: 0;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--bege);
   border-radius: 12px;
   padding: 20px;
+  text-align: left;
 }
+
 /* Carrossel */
 .carrossel-wrapper {
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .carrossel {
   display: flex;
-  overflow-x: auto;
-  gap: 20px;
+  overflow-x: hidden;
   scroll-behavior: smooth;
-  padding: 20px 0;
-}
-
-.carrossel::-webkit-scrollbar {
-  display: none;
+  gap: 20px;
+  flex: 1;
 }
 
 .slide {
-  flex: 0 0 300px;
+  flex: 0 0 30%;
   background: white;
   color: var(--cinza);
   border: 1px solid #ccc;
   border-radius: 12px;
   padding: 20px;
-  min-height: 160px;
+  min-height: 180px;
 }
 
 .slide a {
@@ -117,33 +120,13 @@ p {
   text-decoration: none;
 }
 
-/* Botões do carrossel */
 .carrossel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   background: var(--laranja);
   border: none;
   color: white;
   font-size: 2rem;
-  padding: 10px;
+  padding: 10px 16px;
   cursor: pointer;
   z-index: 10;
-}
-
-.carrossel-btn.left {
-  left: -10px;
-}
-
-.carrossel-btn.right {
-  right: -10px;
-}
-.bloco {
-  min-height: 100vh; /* todos os blocos terão pelo menos a altura da tela */
-  display: flex;
-  align-items: center;
-}
-
-.bloco .container {
-  width: 100%;
+  height: fit-content;
 }
