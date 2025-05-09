@@ -1,93 +1,90 @@
+:root {
+  --claro: #e1dfd4;
+  --escuro: #2f2f2f;
+  --vermelho: #b3472f;
+}
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: sans-serif;
 }
 
 .bloco {
   min-height: 100vh;
-  padding: 60px 30px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
-.bloco-claro {
-  background-color: #e1dfd4;
-  color: #2f2f2f;
+.claro {
+  background: var(--claro);
+  color: var(--escuro);
 }
 
-.bloco-escuro {
-  background-color: #2f2f2f;
-  color: #e1dfd4;
+.escuro {
+  background: var(--escuro);
+  color: var(--claro);
 }
 
-h1, h2 {
-  margin: 10px 0;
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
 }
 
-.foto-perfil {
+.perfil {
   width: 120px;
   border-radius: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 1em;
 }
 
 .cards {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
+  margin-top: 2em;
 }
 
 .card {
-  background-color: transparent;
-  border: 2px solid #e1dfd4;
+  background: none;
+  border: 1px solid var(--claro);
   padding: 20px;
-  width: 280px;
-  text-align: center;
+  flex: 1;
+  min-width: 250px;
 }
 
-.linha {
-  height: 5px;
-  background-color: #e1dfd4;
-}
-
-.carrossel-estatico, .carrossel-videos {
+.carrossel {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
   overflow: hidden;
-  max-width: 100%;
 }
 
-.cards-estaticos img {
-  width: 300px;
-  height: auto;
-  margin: 0 10px;
-  display: none;
-}
-
-.cards-estaticos img.ativo {
-  display: block;
-}
-
-.videos iframe {
-  width: 300px;
-  height: 533px;
-  margin: 0 10px;
-  display: none;
-}
-
-.videos iframe.ativo {
-  display: block;
-}
-
-.btn-carrossel {
-  background-color: #b3472f;
-  color: white;
+.carrossel button {
+  background: var(--vermelho);
   border: none;
-  font-size: 24px;
+  color: white;
+  font-size: 2rem;
   padding: 10px 20px;
   cursor: pointer;
+}
+
+.faixa {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+}
+
+.faixa img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.faixa iframe {
+  width: 300px;
+  height: 533px;
+  border-radius: 8px;
 }
