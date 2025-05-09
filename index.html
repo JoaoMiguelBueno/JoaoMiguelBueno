@@ -1,55 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>João Miguel | Portfólio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <!-- BLOCO 1: Saudação -->
+  <section class="bloco bloco-claro center">
     <h1>Olá!</h1>
     <h2>Eu sou João Miguel</h2>
     <p>Estudante de Jornalismo na UFPel</p>
-  </header>
+  </section>
 
-  <section id="sobre">
+  <!-- BLOCO 2: Sobre -->
+  <section class="bloco bloco-escuro">
     <h3>Sobre mim</h3>
     <p>
-      Sou graduando em Jornalismo na Universidade Federal de Pelotas e apaixonado por comunicação e cinema. Tenho experiência com produção de conteúdo, edição de vídeo, peças gráficas, e estratégias de divulgação. Ao longo da minha trajetória, atuei como designer, redator, editor de vídeo, cinegrafista e repórter.
+      Sou graduando em Jornalismo na Universidade Federal de Pelotas e apaixonado por comunicação e cinema. Atuo na produção de conteúdo para mídias sociais, com experiência em edição de vídeo, peças gráficas e estratégias de divulgação. Ao longo da minha trajetória, fui designer, redator, editor, cinegrafista e repórter.
     </p>
   </section>
 
-  <section id="servicos">
+  <!-- BLOCO 3: O que eu faço -->
+  <section class="bloco bloco-escuro com-divisor">
     <h3>O que eu faço</h3>
     <div class="cards">
       <div class="card">
         <h4>Gestão de redes sociais</h4>
-        <p>Transformo ideias em presença digital consistente e estratégica.</p>
+        <p>Transformo ideias em presença digital estratégica.</p>
       </div>
       <div class="card">
         <h4>Conteúdo audiovisual</h4>
-        <p>Produção e edição de vídeos curtos, teasers e institucionais com identidade.</p>
+        <p>Produção e edição de vídeos com identidade.</p>
       </div>
       <div class="card">
-        <h4>Design e textos</h4>
-        <p>Criação de peças visuais atrativas com legendas que informam e conectam.</p>
+        <h4>Design gráfico e texto</h4>
+        <p>Criação visual com legendas que informam e conectam.</p>
       </div>
     </div>
   </section>
 
-  <section id="portfolio">
-    <h3>Portfólio</h3>
-    <p>A seguir, alguns dos meus trabalhos. Em breve, imagens e vídeos serão adicionados aqui.</p>
-    <ul>
-      <li><a href="https://www.instagram.com/empautaufpel/reel/DGJjp5vSK_7/" target="_blank">Drops | Ano Mais Quente</a></li>
-      <li><a href="https://drive.google.com/file/d/1N7W5pxkY0CaL8-nDrevpIsWwiag_LuUi/view" target="_blank">Minuto Cultural | Dia do Repórter</a></li>
-      <li><a href="https://drive.google.com/file/d/1ldLI3VxxMwo3DuzX9A6JSB55fXz9BLtp/view" target="_blank">DIESP | JUBs 2024</a></li>
-    </ul>
+  <!-- BLOCO 4: Portfólio com slide -->
+  <section class="bloco bloco-claro">
+    <h3>Meus trabalhos</h3>
+    <div class="carrossel-container">
+      <button class="carrossel-btn left" onclick="scrollLeft()">‹</button>
+      <div class="carrossel" id="carrossel">
+        <div class="slide">
+          <h4>Drops | Ano Mais Quente</h4>
+          <p>Edição: João Miguel Bueno</p>
+          <a href="https://www.instagram.com/empautaufpel/reel/DGJjp5vSK_7/" target="_blank">Ver</a>
+        </div>
+        <div class="slide">
+          <h4>Minuto Cultural | Dia do Repórter</h4>
+          <p>Edição: João Miguel Bueno</p>
+          <a href="https://drive.google.com/file/d/1N7W5pxkY0CaL8-nDrevpIsWwiag_LuUi/view" target="_blank">Ver</a>
+        </div>
+        <div class="slide">
+          <h4>DIESP | JUBs 2024</h4>
+          <p>Edição: João Miguel Bueno</p>
+          <a href="https://drive.google.com/file/d/1ldLI3VxxMwo3DuzX9A6JSB55fXz9BLtp/view" target="_blank">Ver</a>
+        </div>
+      </div>
+      <button class="carrossel-btn right" onclick="scrollRight()">›</button>
+    </div>
   </section>
 
-  <footer>
+  <!-- BLOCO 5: Rodapé -->
+  <footer class="bloco bloco-escuro center">
     <p>© 2025 João Miguel Bueno</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
