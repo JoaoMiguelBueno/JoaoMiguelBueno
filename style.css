@@ -67,19 +67,19 @@ p {
 /* Cards de serviços */
 .cards {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
   justify-content: space-between;
+  gap: 20px;
+  flex-wrap: nowrap;
 }
 
 .card {
-  flex: 1 1 30%;
+  flex: 1;
+  min-width: 0;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--bege);
   border-radius: 12px;
   padding: 20px;
 }
-
 /* Carrossel */
 .carrossel-wrapper {
   position: relative;
