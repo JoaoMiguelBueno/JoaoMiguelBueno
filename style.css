@@ -7,7 +7,6 @@
 body {
   margin: 0;
   font-family: 'Helvetica Neue', sans-serif;
-  scroll-behavior: smooth;
 }
 
 .bloco {
@@ -22,6 +21,10 @@ body {
 .bloco-escuro {
   background-color: var(--cinza);
   color: var(--bege);
+}
+
+.divisor-superior {
+  border-top: 4px solid var(--bege);
 }
 
 .center {
@@ -41,8 +44,6 @@ h2 {
 h3 {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  border-left: 6px solid var(--bege);
-  padding-left: 10px;
 }
 
 h4 {
@@ -65,10 +66,7 @@ h4 {
   flex: 1 1 280px;
 }
 
-.com-divisor {
-  border-top: 3px solid var(--bege);
-}
-
+/* Carrossel */
 .carrossel-container {
   position: relative;
   overflow: hidden;
@@ -81,12 +79,17 @@ h4 {
   scroll-behavior: smooth;
   gap: 20px;
   padding: 20px 0;
+  scrollbar-width: none;
+}
+
+.carrossel::-webkit-scrollbar {
+  display: none;
 }
 
 .slide {
   flex: 0 0 300px;
-  background: #fff;
-  color: #000;
+  background: white;
+  color: black;
   border: 1px solid #ccc;
   border-radius: 12px;
   padding: 15px;
@@ -112,14 +115,14 @@ h4 {
   color: white;
   font-size: 2rem;
   cursor: pointer;
-  padding: 0 10px;
+  padding: 0 14px;
   z-index: 2;
 }
 
 .left {
-  left: 10px;
+  left: 0;
 }
 
 .right {
-  right: 10px;
+  right: 0;
 }
