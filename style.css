@@ -138,3 +138,12 @@ p {
 .carrossel-btn.right {
   right: -10px;
 }
+.bloco {
+  min-height: 100vh; /* todos os blocos terão pelo menos a altura da tela */
+  display: flex;
+  align-items: center;
+}
+
+.bloco .container {
+  width: 100%;
+}
