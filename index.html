@@ -8,70 +8,74 @@
 </head>
 <body>
 
-  <!-- BLOCO 1: Apresentação -->
-  <section class="bloco bloco-claro" id="inicio">
-    <div class="conteudo-central">
-      <img src="img/Foto perfil.png" alt="Foto de perfil" class="foto-perfil">
+  <!-- BLOCO 1 -->
+  <section class="bloco claro">
+    <div class="container">
+      <img src="img/Foto perfil.png" class="perfil" alt="Foto de perfil">
       <h1>Olá!</h1>
       <h2>JOÃO MIGUEL</h2>
-      <p>Sou estudante de Jornalismo na UFPel, apaixonado por comunicação e cinema...</p>
+      <p>Sou estudante de Jornalismo na UFPel...</p>
     </div>
   </section>
 
-  <!-- BLOCO 2: O que eu faço -->
-  <section class="bloco bloco-escuro">
-    <h2>O QUE EU FAÇO?</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Gestão de redes sociais</h3>
-        <p>Planejo, organizo e executo conteúdos para plataformas digitais.</p>
-      </div>
-      <div class="card">
-        <h3>Conteúdo audiovisual</h3>
-        <p>Produzo e edito vídeos curtos, reels, teasers e institucionais.</p>
-      </div>
-      <div class="card">
-        <h3>Design</h3>
-        <p>Crio peças visuais atrativas com legendas que informam e conectam.</p>
+  <!-- BLOCO 2 -->
+  <section class="bloco escuro">
+    <div class="container">
+      <h2>O QUE EU FAÇO?</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Gestão de redes sociais</h3>
+          <p>Planejo, organizo e executo conteúdos estratégicos.</p>
+        </div>
+        <div class="card">
+          <h3>Conteúdo audiovisual</h3>
+          <p>Vídeos curtos, dinâmicos e com identidade visual forte.</p>
+        </div>
+        <div class="card">
+          <h3>Design</h3>
+          <p>Peças visuais claras, bonitas e com propósito.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Divisória -->
-  <div class="linha"></div>
-
-  <!-- BLOCO 3: Trabalhos estáticos -->
-  <section class="bloco bloco-escuro">
-    <h2>PEÇAS VISUAIS</h2>
-    <div class="carrossel-estatico">
-      <button class="btn-carrossel" onclick="navegarCards(-1)">‹</button>
-      <div class="cards-estaticos" id="cards-estaticos">
-        <img src="img/Anuncio 7 dia JUGS.heic" alt="">
-        <img src="img/Atletas Ufpel Jubs.heic" alt="">
-        <img src="img/Divulgação Fronteiras Musicais.heic" alt="">
-        <img src="img/Etapa Handebol JUGS.heic" alt="">
+  <!-- BLOCO 3 -->
+  <section class="bloco escuro">
+    <div class="container">
+      <h2>PEÇAS VISUAIS</h2>
+      <div class="carrossel">
+        <button onclick="navegarCards(-1)">‹</button>
+        <div class="faixa" id="carrossel-cards">
+          <img src="img/Anuncio 7 dia JUGS.heic" alt="">
+          <img src="img/Atletas Ufpel Jubs.heic" alt="">
+          <img src="img/Divulgação Fronteiras Musicais.heic" alt="">
+          <img src="img/Etapa Handebol JUGS.heic" alt="">
+        </div>
+        <button onclick="navegarCards(1)">›</button>
       </div>
-      <button class="btn-carrossel" onclick="navegarCards(1)">›</button>
     </div>
   </section>
 
-  <!-- BLOCO 4: Vídeos -->
-  <section class="bloco bloco-claro">
-    <h2>CONFIRA ALGUNS DOS MEUS TRABALHOS</h2>
-    <div class="carrossel-videos">
-      <button class="btn-carrossel" onclick="navegarVideos(-1)">‹</button>
-      <div class="videos" id="videos">
-        <iframe src="https://www.instagram.com/empautaufpel/reel/DG-4NV9gz5Q/embed" frameborder="0"></iframe>
-        <iframe src="https://www.instagram.com/empautaufpel/reel/DGVoDrkg8v-/embed" frameborder="0"></iframe>
-        <iframe src="https://www.instagram.com/empautaufpel/reel/DGJjp5vSK_7/embed" frameborder="0"></iframe>
+  <!-- BLOCO 4 -->
+  <section class="bloco claro">
+    <div class="container">
+      <h2>CONFIRA ALGUNS DOS MEUS TRABALHOS</h2>
+      <div class="carrossel">
+        <button onclick="navegarVideos(-1)">‹</button>
+        <div class="faixa" id="carrossel-videos">
+          <iframe src="https://www.instagram.com/empautaufpel/reel/DG-4NV9gz5Q/embed" frameborder="0"></iframe>
+          <iframe src="https://www.instagram.com/empautaufpel/reel/DGVoDrkg8v-/embed" frameborder="0"></iframe>
+          <iframe src="https://www.instagram.com/empautaufpel/reel/DGJjp5vSK_7/embed" frameborder="0"></iframe>
+          <iframe src="https://www.instagram.com/petfronteirasufpel/reel/DHmQC8hJjAe/embed" frameborder="0"></iframe>
+        </div>
+        <button onclick="navegarVideos(1)">›</button>
       </div>
-      <button class="btn-carrossel" onclick="navegarVideos(1)">›</button>
     </div>
   </section>
 
-  <!-- BLOCO 5: Rodapé -->
-  <section class="bloco bloco-escuro">
-    <div class="conteudo-central">
+  <!-- BLOCO 5 -->
+  <section class="bloco escuro">
+    <div class="container">
       <p>Feito por João Miguel Bueno</p>
     </div>
   </section>
